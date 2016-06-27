@@ -34,7 +34,7 @@ router.get('/:resource', function(req, res, next) {
 
 router.post('/:resource', function(req, res, next){
 	var resource = req.params.resource
-	if (resource = 'inquiry'){
+	if (resource == 'inquiry'){
 
 		var params = req.body
 		var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
