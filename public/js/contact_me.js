@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "api/inquiry",
+                url: "/api/inquiry",
                 type: "post",
                 data: {
                     name: name,
