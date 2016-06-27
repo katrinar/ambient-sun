@@ -64,7 +64,11 @@ router.post('/:resource', function(req, res, next){
 			})
 			return
 		})
+
 	}
+
+
+	
 
 	else {
 		res.json({
