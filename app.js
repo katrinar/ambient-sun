@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 var routes = require('./routes/index');
 var api = require('./routes/api');
 
-var mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost/'+appName;
+var mongoUrl = process.env.MONGOLAB_GREEN_URI || 'mongodb://localhost/'+appName;
 mongoose.connect(mongoUrl, function(err, res){
   if(err){
     console.log('DB Connection Failed: '+err)
