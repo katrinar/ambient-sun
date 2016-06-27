@@ -5,6 +5,7 @@ var InquirySchema = new mongoose.Schema({
 	email:{type:String, default: ''},
 	phone:{type:String, default: ''},
 	message:{type:String, default: ''},
+	subject:{type:String, default: ''},
 	service:{type:String, default: ''},
 	timestamp:{type:String, default:Date.now}
 })
